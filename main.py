@@ -5,16 +5,9 @@ with open(wd,'r') as f:
     file=f.read()
 
 def each_req(i,domain):
-    r=requests.get(i+'.'+domain)
+    r=requests.get('https://'+i+'.'+domain)
     if r.status_code==200:
-        dict
-def enum_req():
-    for i in file.split():
-        each_req(i,domain)
+        print(i+'.'+domain+'  active')
 
-
-
-
-
-
-
+for i in file.split():
+    each_req(i,domain)
