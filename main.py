@@ -9,7 +9,7 @@ def each_req(i,domain):
     if r.status_code==200:
         dict
 def enum_req():
-    for i in file:
+    for i in file.split():
         each_req(i,domain)
 
 
